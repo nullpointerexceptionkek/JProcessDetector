@@ -87,6 +87,21 @@ public class ProcessMonitor {
                 e.printStackTrace();
                 return false;
             }
+        } else if(SysUtil.isMac()||SysUtil.isLinux()){
+            try {
+                Process process = Runtime.getRuntime().exec("ps aux | grep " + processName);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    if (line.contains(processName)) {
+                        return true;
+                    }
+                }
+                return false;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
         }
         throw new UnsupportedOperationException("This method is not supported on this operating system.");
     }

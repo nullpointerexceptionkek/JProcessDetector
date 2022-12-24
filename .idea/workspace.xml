@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107b2588-2b97-4374-a75f-5b6399b73c1d" name="Changes" comment="made so that an instance is need to monitor">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/core/windows/ProcessMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/core/windows/ProcessMonitor.java" afterDir="false" />
-    </list>
+    <list default="true" id="107b2588-2b97-4374-a75f-5b6399b73c1d" name="Changes" comment="added only call once option" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671914499540</updated>
-      <workItem from="1671914501101" duration="4368000" />
+      <workItem from="1671914501101" duration="4766000" />
     </task>
     <task id="LOCAL-00001" summary="intial commit">
       <created>1671917232334</created>
@@ -74,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671917590176</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added only call once option">
+      <created>1671919016974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671919016974</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intial commit" />
     <MESSAGE value="made so that an instance is need to monitor" />
-    <option name="LAST_COMMIT_MESSAGE" value="made so that an instance is need to monitor" />
+    <MESSAGE value="added only call once option" />
+    <option name="LAST_COMMIT_MESSAGE" value="added only call once option" />
   </component>
 </project>
