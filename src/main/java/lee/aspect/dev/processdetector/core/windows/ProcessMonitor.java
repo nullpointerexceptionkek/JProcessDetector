@@ -10,7 +10,7 @@ public class ProcessMonitor {
     private static OpenListener listener;
     private static String processName;
 
-    public static void startMonitoring(String processName, OpenListener listener) {
+    public void startMonitoring(String processName, OpenListener listener) {
         ProcessMonitor.processName = processName;
         ProcessMonitor.listener = listener;
 
@@ -30,7 +30,7 @@ public class ProcessMonitor {
         thread.start();
     }
 
-    public static void stopMonitoring() {
+    public void stopMonitoring() {
         processName = null;
         listener = null;
     }

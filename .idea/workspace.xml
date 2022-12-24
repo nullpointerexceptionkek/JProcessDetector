@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107b2588-2b97-4374-a75f-5b6399b73c1d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/core/OpenListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/core/SysUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/core/windows/ProcessMonitor.java" afterDir="false" />
+    <list default="true" id="107b2588-2b97-4374-a75f-5b6399b73c1d" name="Changes" comment="intial commit">
+      <change beforePath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +56,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671914499540</updated>
-      <workItem from="1671914501101" duration="2649000" />
+      <workItem from="1671914501101" duration="2952000" />
     </task>
+    <task id="LOCAL-00001" summary="intial commit">
+      <created>1671917232334</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671917232334</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +81,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="intial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="intial commit" />
   </component>
 </project>
