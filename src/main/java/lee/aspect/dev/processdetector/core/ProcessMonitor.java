@@ -26,6 +26,11 @@ public class ProcessMonitor {
             try {
                 Process process = Runtime.getRuntime().exec("tasklist");
                 BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                BufferedReader errReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+                String errLine;
+                while ((errLine = errReader.readLine()) != null) {
+                    System.err.println(errLine);
+                }
                 String line;
                 while ((line = reader.readLine()) != null) {
                     if (line.contains(processName)) {
@@ -40,8 +45,14 @@ public class ProcessMonitor {
             }
         } else if (SysUtil.isMac() || SysUtil.isLinux()) {
             try {
-                Process process = Runtime.getRuntime().exec("ps aux | grep " + processName);
+                Process process = Runtime.getRuntime().exec("ps -e");
                 BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                BufferedReader errReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+                String errLine;
+                while ((errLine = errReader.readLine()) != null) {
+                    System.err.println(errLine);
+                }
+
                 String line;
                 while ((line = reader.readLine()) != null) {
                     if (line.contains(processName)) {
