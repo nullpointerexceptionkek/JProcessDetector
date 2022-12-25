@@ -1,6 +1,8 @@
 package lee.aspect.dev.processdetector.core;
-@FunctionalInterface
-public interface OpenListener {
+
+public interface OpenCloseListener {
     void onProcessOpen();
+
+    void onProcessClose();
 
 }
