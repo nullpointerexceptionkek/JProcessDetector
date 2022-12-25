@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107b2588-2b97-4374-a75f-5b6399b73c1d" name="Changes" comment="added only call once option">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/Main.java" afterDir="false" />
+    <list default="true" id="107b2588-2b97-4374-a75f-5b6399b73c1d" name="Changes" comment="fix linux support">
       <change beforePath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/core/ProcessMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lee/aspect/dev/processdetector/core/ProcessMonitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671919016974</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix linux support">
+      <created>1671941044965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671941044965</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +108,7 @@
     <MESSAGE value="intial commit" />
     <MESSAGE value="made so that an instance is need to monitor" />
     <MESSAGE value="added only call once option" />
-    <option name="LAST_COMMIT_MESSAGE" value="added only call once option" />
+    <MESSAGE value="fix linux support" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix linux support" />
   </component>
 </project>
