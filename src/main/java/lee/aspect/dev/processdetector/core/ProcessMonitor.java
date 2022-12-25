@@ -1,6 +1,5 @@
 package lee.aspect.dev.processdetector.core;
 
-import com.sun.istack.internal.NotNull;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -68,7 +67,10 @@ public class ProcessMonitor {
         throw new UnsupportedOperationException("This method is not supported on this operating system.");
     }
 
-    public void startMonitoring(String processName, @NotNull OpenCloseListener listener, long waitDuration, TimeUnit waitDurationUnit) {
+    public void startMonitoring(String processName, OpenCloseListener listener, long waitDuration, TimeUnit waitDurationUnit) {
+        if(listener == null) {
+            throw new IllegalArgumentException("listener cannot be null");
+        }
         this.isProcessOpen = isProcessOpen(processName);
         if (isProcessOpen) {
             listener.onProcessOpen();

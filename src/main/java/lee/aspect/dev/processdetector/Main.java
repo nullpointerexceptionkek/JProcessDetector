@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main{
     public static void main(String[] args) {
-        new ProcessMonitor().startMonitoring("java.exe", new OpenCloseListener() {
+        new ProcessMonitor().startMonitoring("Notepad.exe", new OpenCloseListener() {
             @Override
             public void onProcessOpen() {
                 System.out.println("Process Opened");
