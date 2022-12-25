@@ -67,7 +67,7 @@ public class ProcessMonitor {
      * @return true if the process is open, false otherwise
      * @throws UnsupportedOperationException if the current operating system is not supported
      */
-    private static boolean isProcessOpen(String processName) {
+    public static boolean isProcessOpen(String processName) {
         if (SysUtil.isWindows()) {
             try {
                 Process process = Runtime.getRuntime().exec("tasklist");

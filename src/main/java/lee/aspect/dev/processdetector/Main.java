@@ -32,6 +32,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Main{
     public static void main(String[] args) {
+        boolean isOpen = ProcessMonitor.isProcessOpen("Notepad.exe");
+        System.out.println("Is Notepad open? " + isOpen);
+
         new ProcessMonitor().startMonitoring("Notepad.exe", new OpenCloseListener() {
             @Override
             public void onProcessOpen() {
