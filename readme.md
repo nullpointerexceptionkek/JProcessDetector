@@ -7,7 +7,7 @@ For example, you can check if the user have notepad.exe running(Windows)
 You can also add a listener to the process, so you can detect when the process is started or stopped and run some code when it happens.
 
 ## How to use?
-You will need to instanciate the ProcessDetector class, and override the OpenClose interface.
+You will need to instantiate the ProcessDetector class, and override the OpenClose interface.
 ``` java
 new ProcessMonitor().startMonitoring("Notepad.exe", new OpenCloseListener() {
             @Override
