@@ -23,8 +23,12 @@ new ProcessMonitor().startMonitoring("Notepad.exe", new OpenCloseListener() {
 ```
 You could also use the static method to check if a process exists or not at the current time.
 ```java
-boolean isOpen = ProcessMonitor.isProcessOpen("Notepad.exe");
-System.out.println("Is Notepad open? " + isOpen);
+class Main{
+    public static void main(String[]args){
+        boolean isOpen=ProcessMonitor.isProcessOpen("Notepad.exe");
+        System.out.println("Is Notepad open? "+isOpen);
+    }
+}
 ```
 
 ## How to add?
