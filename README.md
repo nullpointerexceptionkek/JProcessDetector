@@ -15,19 +15,34 @@ You can also add a listener to the process, so you can detect when the process i
 | Linux   | ✔️                         |
 
 ## How to use?
-You will need to instantiate the ProcessDetector class, and override the OpenClose interface.
+You will need to instantiate a ScheduledExecutorService and then the ProcessDetector class, and override the OpenClose interface.
 ``` java
-new ProcessMonitor().startMonitoring("Notepad.exe", new OpenCloseListener() {
+        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(5);
+
+        new ProcessMonitor(scheduler, "Notepad.exe", new OpenCloseListener() {
             @Override
             public void onProcessOpen() {
-                System.out.println("Process Opened");
+                System.out.println("notepad Opened");
             }
 
             @Override
             public void onProcessClose() {
-                System.out.println("Process Closed");
+                System.out.println("notepad Closed");
             }
-        }, 1, TimeUnit.SECONDS);
+        }, 1, TimeUnit.SECONDS).startMonitoring();
+
+        new ProcessMonitor(scheduler, "cmd.exe", new OpenCloseListener() {
+            @Override
+            public void onProcessOpen() {
+                System.out.println("cmd Opened");
+            }
+
+            @Override
+            public void onProcessClose() {
+                System.out.println("cmd Closed");
+            }
+        }, 1, TimeUnit.SECONDS).startMonitoring();
+    }
 ```
 You could also use the static method to check if a process exists or not at the current time.
 ```java
